@@ -6,6 +6,9 @@
     --dark: #04000B;
 }
 
+body{
+    background-color: #FFFFFF;
+}
 
 /*** Spinner ***/
 #spinner {
