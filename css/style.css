@@ -1,8 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #000000;
-    --secondary: #FBA504;
-    --light: #F6F4F9;
+    --primary: #304D30;
+    --light: #e4e8e4;
     --dark: #04000B;
 }
 
@@ -398,7 +397,7 @@ h6,
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--primary);
+    color: #253c25;
     background: #FFFFFF;
     border-radius: 40px 40px 0 0;
     transition: .5s;
