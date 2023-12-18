@@ -1,14 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6222CC;
+    --primary: #000000;
     --secondary: #FBA504;
     --light: #F6F4F9;
     --dark: #04000B;
 }
 
 body{
-    background-color: #FFFFFF;
+    background-color: #271e1e;
 }
+
 
 /*** Spinner ***/
 #spinner {
@@ -120,7 +121,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
+    color: #304D30 !important;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -175,7 +176,7 @@ h6,
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #FFFFFF;
+        background: #ffffff;
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
@@ -205,8 +206,8 @@ h6,
     }
 
     .sticky-top.navbar-light .btn {
-        color: var(--dark);
-        background: var(--secondary);
+        color: #ffffff;
+        background: #304D30;
     }
 }
 
@@ -236,6 +237,11 @@ h6,
     .hero-header {
         padding: 6rem 0 9rem 0;
     }
+}
+
+.mainimg{
+    position: relative;
+    bottom: 100px;
 }
 
 
@@ -318,7 +324,11 @@ h6,
     width: 0px;
     transition: 3s;
 }
-
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #FBA504;
+    border-color: #FBA504; /*set the color you want here*/
+}
 
 /*** Fact ***/
 .fact {
@@ -438,7 +448,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 34, 204, .9);
+    background: rgba(30, 28, 33, 0.9);
     transition: .5s;
     opacity: 0;
 }
