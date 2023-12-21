@@ -123,7 +123,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #304D30 !important;
+    color: #78a4b4 !important;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -172,7 +172,7 @@ h6,
         width: 100%;
         top: 0;
         left: 0;
-        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        border-bottom: 1px solid rgb(25 221 225 / 10%);
         z-index: 999;
     }
     
