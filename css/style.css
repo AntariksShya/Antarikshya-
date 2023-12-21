@@ -123,7 +123,11 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
+<<<<<<< HEAD
     color: #78a4b4 !important;
+=======
+    color: #09e3b3 !important;
+>>>>>>> 4e39d744ef959cd4aaf39fdc23eb27babc509411
 }
 
 .navbar-light .navbar-brand h1 {
@@ -209,7 +213,7 @@ h6,
 
     .sticky-top.navbar-light .btn {
         color: #ffffff;
-        background: #304D30;
+        background: #d7a100;
     }
 }
 
