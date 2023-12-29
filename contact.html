@@ -101,19 +101,19 @@
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <button onclick="sendMessage();" class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </form>
@@ -231,24 +231,29 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/isotope/isotope.pkgd.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "projectorbit7@gmail.com",
-    Password : "mt8848F#",
-    To : 'projectorbit7@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact From",
-    Body : "Name: "+document.getElementById("name").value + "<br> Email: "+document.getElementById("email").value + + "<br> Subject: "+document.getElementById("subject").value + "<br> Message: "+document.getElementById("message").value  
-}).then(
-  message => alert("Message Sent Sucessfully ! ")
-);
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+<script>
+    function sendMessage(){
+        (function(){
+            email.js.inti("TdjeV5JcZdGJoR8bD");
+        })();
+        var serviceID="service_4cuah54";
+        var templateID="template_3icwdjb";
+
+        var params={
+            sendername:document.querySelector("#name").value,
+            senderemail:document.querySelector("#email").value,
+            subject:document.querySelector("#subject").value,
+            message:document.querySelector("#message").value
+        };
+        emailjs.send(serviceID,templateID,params)
+        .then(res=>{
+            alert('Thank you, '+ params['sendername'] + '! Your message has been sent');
+        })
+        .catch(err=>console.log(err));
     }
 </script>
-
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
 </body>
