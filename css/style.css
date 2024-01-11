@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root {
     --primary: #304D30;
     --light: #e4e8e4;
@@ -7,6 +8,7 @@
 
 body{
     background-color: #271e1e;
+  
 }
 
 
@@ -596,6 +598,62 @@ color: #f9f6f6;
     background: var(--primary);
 }
 
+/* Our patner  */
+.container{
+    padding-top: 150px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.customer-logos{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.slide img{
+    width: 100px;
+}
 
 /*** Footer ***/
 .footer {
