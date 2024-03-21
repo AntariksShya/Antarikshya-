@@ -210,11 +210,12 @@ h6,
     .navbar-light .btn {
         color: var(--dark);
         background: #FFFFFF;
+        border: #ffb400;
     }
 
     .sticky-top.navbar-light .btn {
         color: #ffffff;
-        background: #d7a100;
+        background: #31363F;
     }
 }
 
@@ -249,7 +250,7 @@ h6,
 
 .mainimg{
     position: relative;
-    bottom: 125px;
+    bottom: 160px;
 }
 
 
@@ -369,7 +370,7 @@ h6,
 .service-item:hover {
     margin-top: -15px;
     padding-bottom: 60px;
-    background: var(--primary);
+    background: #31363F
 }
 
 .service-item .service-icon {
